@@ -45,7 +45,7 @@
             <v-divider :vertical="!mdAndDown" :style="mdAndDown ? '' : 'min-height:60vh'" :class="!mdAndDown ? 'my-auto' : ''"></v-divider>
             <v-col :cols="mdAndDown ? '12': '6'" class="d-flex flex-column align-center justify-center text-center text-h5">
                 <div class="mb-6">
-                    Seek an ancient hall where heroes' wisdom is kept. 
+                    Seek an ancient archive where heroes' wisdom is kept. 
                     Only in the writings of one who thought to look beyond the veil will your path be cleared. 
                     There, amidst the dialogue of sages, lies the key to unlocking the numbers which bind you.
                 </div>
