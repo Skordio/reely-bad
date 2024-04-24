@@ -46,7 +46,7 @@
             <v-col :cols="mdAndDown ? '12': '6'" class="d-flex flex-column align-center justify-center text-center text-h5">
                 <div class="mb-6">
                     Seek an ancient archive where heroes' wisdom is kept. 
-                    Only in the writings of one who thought to look beyond the veil will your path be cleared. 
+                    Only in the writings of one who realized the nature of the veil will your path be cleared. 
                     There, amidst the dialogue of sages, lies the key to unlocking the numbers which bind you.
                 </div>
                 <div v-for="number in numbers">{{ number }}</div>
