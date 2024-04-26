@@ -12,19 +12,19 @@
                 <span>Analysis of intercepted transmissions will reveal the key location – it’s now or never. </span>
             </v-col>
         </v-row>
-        <v-card class="d-flex flex-column align-center pa-3 mb-5 rounded elevation-5" variant="tonal" :style="vCardStyle">
-            <v-row class="d-flex align-center">
-                <v-col class="text-green text-h6 text-center">
+        <v-card :style="vCardStyle" class="d-flex flex-column align-center pa-3 mb-5 h-100 w-100 elevation-5" variant="tonal" >
+            <v-row class="d-flex align-center mb-n14">
+                <v-col class="text-green text-center" :class="headerTextClass">
                     INCOMING SECURE TRANSMISSION NO. 139-839-65537
                 </v-col>
             </v-row>
             <v-row>
-                <v-col class="font-weight-black text-h5 mt-n8 text-no-wrap">
+                <v-col class="font-weight-black text-h1 mt-n14 text-no-wrap">
                     _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _               
                 </v-col>
             </v-row>
             <v-row>
-                <v-col class="d-flex flex-column align-center mb-2">
+                <v-col class="d-flex flex-column align-center mb-2" :class="numbersClass">
                     <div v-for="number in numbers">{{ number }}</div>
                 </v-col>
             </v-row>
@@ -80,25 +80,55 @@ const spectreStyle = computed(() => {
     }
 })
 
-const vCardStyle = computed(() => {
-    if (mdAndDown.value) {
-        return {
-            'min-height': '500px',
-            'max-width': '80vw'
-        }
-    } else {
-        return {
-            'min-height': '430px',
-            'max-width': '50vw',
-        }
-    }
-})
+// const vCardStyle = computed(() => {
+//     if (mdAndDown.value) {
+//         return {
+//             'min-height': '500px',
+//             'max-width': '80vw'
+//         }
+//     } else {
+//         return {
+//             'min-height': '430px',
+//             'max-width': '50vw',
+//         }
+//     }
+// })
 
 const imgWidth = computed(() => {
     if (smAndDown.value) {
         return '50px'
     } else {
         return '100px'
+    }
+})
+
+const vCardStyle = computed(() => {
+    if (mdAndDown.value) {
+        return {
+            'min-height': '80vh',
+            'max-width': '80vw'
+        }
+    } else {
+        return {
+            'min-height': '60vh',
+            'max-width': '35vw'
+        }
+    }
+})
+
+const headerTextClass = computed(() => {
+    if (mdAndDown.value) {
+        return 'text-h4'
+    } else {
+        return 'text-h5'
+    }
+})
+
+const numbersClass = computed(() => {
+    if (mdAndDown.value) {
+        return 'text-h5'
+    } else {
+        return 'text-h6'
     }
 })
 
