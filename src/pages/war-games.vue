@@ -10,8 +10,8 @@
                 David Lightman has long abandoned his days of trying to hack into government systems. 
                 Instead, he has found himself a new challenge: trying to discover the deepest secrets of RIT. 
                 He has spent countless hours of his time trying to find some mention of it in the vast expanse of Youtube videos created by the university. 
-                So far he has found 11 videos that have stuck out to him, each containing some element of the final answer he is looking for, but he is struggling to find the one video that will uniformly combine the elements of all of them. 
-                He knows once he does he will finally have the resources he needs to go there and locate the final missing piece.
+                So far he has found 11 videos that have stuck out to him, each containing some element of the final answer he is looking for, but he is struggling to find the one video that will <span class="font-italic">uniformly</span> combine the elements of all of them. 
+                He knows once he does he will finally have the <span class="font-italic">resources</span> he needs to go there and <span class="font-italic">locate</span> the final missing piece.
             </v-col>
         </v-row>
         <v-row class="d-flex align-center">
