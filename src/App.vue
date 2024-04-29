@@ -8,7 +8,7 @@
 					<v-container fluid class="pa-0">
 						<v-row>
 							<v-col cols="12" class="d-flex justify-start">
-								<v-btn @click="toggleTheme" class="mx-3">{{ themeButtonText }}</v-btn>
+								<v-btn @click="toggleTheme" class="mx-3" title="This is not part of the puzzle">{{ themeButtonText }}</v-btn>
 								<v-btn v-if="!onHomeRoute" @click="goHome" class="mx-3">Back</v-btn>
 							</v-col>
 						</v-row>
