@@ -13,9 +13,10 @@
                 </div>
                 <div>
                     “Yes, Neo,” I said, “you’ve lived your whole life in a place where the only reality you know is artificially crafted and force fed to you. 
-                    Your senses were presented with a well-constructed facade.” 
+                    If you had lived your whole life only allowed to see shadows, you would believe that was all there was.” 
                 </div>
-                <div>
+
+                <!-- <div>
                     “But if that's all been a lie, what does that say about what I've actually lived?” he said.
                 </div>
                 <div>
@@ -30,7 +31,7 @@
                     The journey towards the truth is not about finding the ultimate reality, 
                     but about shedding the layers of falsehoods we've been cloaked in. 
                     This journey, your journey, is only just beginning.”
-                </div>
+                </div> -->
                 <div class="text-center">...</div>
                 <div>
                     “We’ve discovered an important code,” I said, 
@@ -47,7 +48,7 @@
                 <div class="mb-6">
                     Seek an ancient archive where heroes' wisdom is kept. 
                     Only in the writings of one who realized the nature of the veil will your path be cleared. 
-                    There, amidst the dialogue of sages, lies the key to unlocking the numbers which bind you.
+                    There, amidst the dialogue of sages, lies the connection.
                 </div>
                 <div v-for="number in numbers">{{ number }}</div>
             </v-col>
