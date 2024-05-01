@@ -31,7 +31,7 @@
                 </div>
             </v-col>
             <v-col :cols="contentCols" class="d-flex flex-1-1 justify-center" >
-                <v-img src="images/war-games/letters_with_colors.png" height="30vh" width="40vw" :max-width="mdAndDown ? '80vw' : '50vw'"></v-img>
+                <v-img src="images/war-games/RIT_Puzzle_Alphabet.png" height="30vh" width="40vw" :max-width="mdAndDown ? '80vw' : '50vw'"></v-img>
             </v-col>
         </v-row>
         <v-row class="align-self-stretch">
