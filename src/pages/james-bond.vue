@@ -25,7 +25,9 @@
             </v-row>
             <v-row>
                 <v-col class="d-flex flex-column align-center mb-2" :class="numbersClass">
-                    <div v-for="number in numbers">{{ number }}</div>
+                    <div v-for="list in numbers" class="d-flex justify-center" style="gap:18px">
+                        <span v-for="number in list">{{ number }}</span>
+                    </div>
                 </v-col>
             </v-row>
             <v-row class="w-100 d-flex justify-center" style="margin-top:-100px">
@@ -57,18 +59,17 @@ const smAndDown = computed(() => display.smAndDown.value)
 const answer = ref(475390510)
 
 const numbers = [
-    57383,
-    93545,
-    93545,
-    3737,
-    39049,
-    18821,
-    93545,
-    93545,
-    34022,
-    57383,
-    71751,
-    18821
+    ['92108', '93034', '111273'],
+    ['35369', '3737', '57383'],
+    ['93545', '3737', '37078'],
+    ['93034', '35369', '35369'],
+    ['92108', '18647', '111273'],
+    ['83875', '61625', '33298'],
+    ['3737', '80409', '113442'],
+    ['61596', '61596', '61625'],
+    ['111273', '111273', '61625'],
+    ['113442', '46466', '18647'],
+    ['96780']
 ]
 
 const dark = isThemeDark()
