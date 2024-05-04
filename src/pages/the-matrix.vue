@@ -21,23 +21,6 @@
                 <div>
                     "No, Neo," said I. "We never free anyone above a certain age - the mind has trouble letting go. If you were to go back into the cave and try to enlighten anyone else to the truth, they would undoubtedly resist or worse."
                 </div>
-
-                <!-- <div>
-                    “But if that's all been a lie, what does that say about what I've actually lived?” he said.
-                </div>
-                <div>
-                    “What you lived in the Matrix was merely a shadow, designed to obscure the deeper truth. 
-                    Your experiences, while real to you, were part of a grander illusion.”
-                </div>
-                <div>
-                    “Then, is this reality now, the true reality?” he asked.
-                </div>
-                <div>
-                    “That depends,” said I, “on your willingness to see beyond what is shown and to question everything anew. 
-                    The journey towards the truth is not about finding the ultimate reality, 
-                    but about shedding the layers of falsehoods we've been cloaked in. 
-                    This journey, your journey, is only just beginning.”
-                </div> -->
                 <div class="text-center">...</div>
                 <div>
                     “We’ve discovered an important code,” I said, 
