@@ -1,6 +1,6 @@
 # Reely Bad
 
-This is the website for Group 2's Meta Puzzle for the CSCI 539 final project. 
+This is the website for Group 2's Meta Puzzle for the CSCI 539 final project. You can find the website hosted [here](http://skordio.github.io/reely-bad/)
 
 ## Project Setup
 
