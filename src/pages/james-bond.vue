@@ -13,28 +13,30 @@
             </v-col>
         </v-row>
         <v-card :style="vCardStyle" class="d-flex flex-column align-center pa-3 mb-5 h-100 w-100 elevation-5" variant="tonal" >
-            <v-row class="d-flex align-center mb-n14">
-                <v-col class="text-green text-center" :class="headerTextClass">
-                    INCOMING SECURE TRANSMISSION NO. 139-839-65537
-                </v-col>
-            </v-row>
-            <v-row>
-                <v-col class="font-weight-black text-h1 mt-n14 text-no-wrap">
-                    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _               
-                </v-col>
-            </v-row>
-            <v-row>
-                <v-col class="d-flex flex-column align-center mb-2" :class="numbersClass">
-                    <div v-for="list in numbers" class="d-flex justify-center" style="gap:18px">
-                        <span v-for="number in list">{{ number }}</span>
-                    </div>
-                </v-col>
-            </v-row>
-            <v-row class="w-100 d-flex justify-center" style="margin-top:-100px">
-                <v-col class="d-flex flex-row justify-end" cols="12">
-                    <v-img src="images/james-bond/spectre.png" :max-width="imgWidth" :height="imgWidth" class="ms-auto" :style="spectreStyle"></v-img>
-                </v-col>
-            </v-row>
+            <v-container class="d-flex flex-column" ref="cardContainer">
+                <v-row class="d-flex align-center mb-n14">
+                    <v-col class="text-green text-center" :class="headerTextClass">
+                        INCOMING SECURE TRANSMISSION NO. 139-839-65537
+                    </v-col>
+                </v-row>
+                <v-row>
+                    <v-col class="font-weight-black text-h1 mt-n14 text-no-wrap">
+                        _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _               
+                    </v-col>
+                </v-row>
+                <v-row>
+                    <v-col class="d-flex flex-column align-center mb-2" :class="numbersClass">
+                        <div v-for="list in numbers" class="d-flex justify-center" style="gap:18px">
+                            <span v-for="number in list">{{ number }}</span>
+                        </div>
+                    </v-col>
+                </v-row>
+                <v-row class="w-100 d-flex justify-center" style="margin-top:0px;margin-bottom:30px">
+                    <v-col class="d-flex flex-row justify-end" cols="12">
+                        <v-img src="images/james-bond/spectre.png" :max-width="imgWidth" :height="imgWidth" class="ms-auto" :style="spectreStyle"></v-img>
+                    </v-col>
+                </v-row>
+            </v-container>
         </v-card>
         <v-row class="align-self-stretch">
             <v-col cols="12" class="d-flex flex-row flex-1-1">
@@ -51,6 +53,7 @@ import { isThemeDark } from '@/composables';
 
 import { ref, computed } from 'vue';
 import { useDisplay, useTheme } from 'vuetify';
+import { useElementSize } from '@vueuse/core';
 const display = useDisplay()
 const theme = useTheme()
 const mdAndDown = computed(() => display.mdAndDown.value)
@@ -103,10 +106,14 @@ const imgWidth = computed(() => {
     }
 })
 
+const cardContainer = ref(null)
+
+const { width, height } = useElementSize(cardContainer)
+
 const vCardStyle = computed(() => {
     if (mdAndDown.value) {
         return {
-            'min-height': '80vh',
+            'min-height': `${height.value}px`,
             'max-width': '80vw'
         }
     } else {
@@ -132,5 +139,6 @@ const numbersClass = computed(() => {
         return 'text-h6'
     }
 })
+
 
 </script>
