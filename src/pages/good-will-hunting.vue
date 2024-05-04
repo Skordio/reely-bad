@@ -9,10 +9,9 @@
             <v-col class="text-h6">
                 Step into the intellectual arena where numbers reign supreme, where the essence of 'Good Will Hunting' beckons daring minds. 
                 Behold the sudoku's intricate grid, a playground of enigmatic possibilities. 
-                Yet, beyond its surface lies a deeper mystery, a puzzle encoded within. 
-                Explore the concealed depths of each 3x3 enclave, where the language of linear algebra unveils its secrets. 
-                Remember: every calculation holds significance, every absolute determinant a clue. 
-                Let the whispers of matrices guide your journey through this cryptic labyrinth, where intuition meets the artistry of deduction, culminating in the ultimate revelation.
+                Yet, beyond its surface lies a deeper mystery, a puzzle encoded within.  
+                Remember: every calculation holds significance, you'll have to be absolutely determined. 
+                As you navigate this labyrinth of intellect, let intuition be your compass, guiding you towards the ultimate revelation.
             </v-col>
         </v-row>
         <v-row class="d-flex align-center">
@@ -64,15 +63,15 @@ const answer = ref(1467159782)
 
 
 const sudoku = [
-    [0, 7, 0, 0, 6, 5, 0, 0, 9],
-    [4, 0, 0, 0, 0, 8, 1, 0, 7],
-    [8, 0, 0, 7, 0, 0, 0, 0, 0],
-    [5, 1, 0, 0, 7, 0, 8, 0, 6],
-    [6, 0, 2, 9, 0, 4, 0, 5, 0],
-    [0, 3, 7, 5, 8, 0, 4, 2, 1],
-    [2, 0, 0, 0, 0, 7, 0, 0, 8],
-    [7, 0, 0, 1, 3, 0, 0, 0, 0],
-    [1, 5, 6, 8, 0, 9, 3, 0, 2]
+    [0, 0, 0, 0, 0, 0, 0, 8, 9],
+    [4, 0, 5, 0, 0, 8, 1, 0, 0],
+    [8, 0, 0, 0, 2, 0, 5, 0, 4],
+    [0, 0, 0, 2, 7, 0, 0, 9, 0],
+    [0, 8, 0, 9, 0, 0, 0, 0, 3],
+    [9, 3, 7, 5, 0, 6, 0, 2, 0],
+    [0, 4, 0, 6, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 2, 0, 4, 5],
+    [1, 0, 6, 0, 0, 0, 0, 0, 0]
 ];
 
 const multiplyArray = [
