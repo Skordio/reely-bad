@@ -8,6 +8,7 @@
         <v-row class="d-flex justify-center mb-3">
             <v-col class="text-h6 d-flex flex-column">
                 To implant an idea in someone’s mind is a delicate process involving the creation of dreams within dreams. 
+                It is at the intersection of the themes of these dreams where the subject extracts the implanted message.
                 Only when these dreams are layered on top of each other is the message able to truly take root.
             </v-col>
         </v-row>

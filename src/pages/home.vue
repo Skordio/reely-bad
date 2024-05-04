@@ -10,7 +10,7 @@
                 Oh no! It's the night before the big heist and Danny dropped all of the film reels. 
                 He needs them to cover his tracks but they came unspooled. 
                 Help Danny return the film back to their reels. 
-                Also, please apply a protective coating to ensure the film doesn’t sustain any further damage. 
+                Also, please apply an exclusive coating to the film to act as a protective barrier against further damage. 
                 Once done, quickly splice together the top clips from each to create the final edit.
             </v-col>
         </v-row>
