@@ -7,19 +7,13 @@
         </v-row>
         <v-row class="d-flex justify-center">
             <v-col class="text-h6">
-                Recently, the enigmatic Hex Girls have mysteriously vanished. 
+                Recently, the Hex Girls have been kidnapped by a witch. 
                 They've left behind a series of perplexing clues with subtle hints embedded within. 
-                It’s your task to fill out these puzzles and decipher the hidden messages.
+                It’s your task to fill out the puzzle and figure out the solution.
             </v-col>
         </v-row>
         <v-row class="w-100 d-flex justify-center">
-            <v-col cols="auto" class="d-flex"><v-img src="images/scooby-doo/1.png" min-width="160px"></v-img></v-col>
-            <v-col cols="auto" class="d-flex"><v-img src="images/scooby-doo/2.png" min-width="240px"></v-img></v-col>
-            <v-col cols="auto" class="d-flex"><v-img src="images/scooby-doo/3.png" min-width="240px"></v-img></v-col>
-            <v-col cols="auto" class="d-flex"><v-img src="images/scooby-doo/4.png" min-width="360px"></v-img></v-col>
-            <v-col cols="auto" class="d-flex"><v-img src="images/scooby-doo/5.png" min-width="240px"></v-img></v-col>
-            <v-col cols="auto" class="d-flex"><v-img src="images/scooby-doo/6.png" min-width="240px"></v-img></v-col>
-            <v-col cols="auto" class="d-flex"><v-img src="images/scooby-doo/7.png" min-width="160px"></v-img></v-col>
+            <v-col cols="auto" class="d-flex w-100"><v-img :src="imgSrc" min-width=""></v-img></v-col>
         </v-row>
         <v-row class="align-self-stretch">
             <v-col cols="12" class="d-flex flex-row flex-1-1">
@@ -40,6 +34,16 @@ const display = useDisplay()
 const mdAndDown = computed(() => display.mdAndDown.value)
 
 const answer = ref(-1818871485)
+
+const isDark = isThemeDark()
+
+const imgSrc = computed(() => {
+    if (isDark.value) {
+        return 'images/scooby-doo/nonogram_darkmode.png'
+    } else {
+        return 'images/scooby-doo/nonogram_lightmode.png'
+    }
+})
 
 
 </script>
