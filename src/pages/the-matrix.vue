@@ -19,7 +19,7 @@
                     “We have to tell someone! They deserve to know the true nature of the world they live in,” he said.
                 </div>
                 <div>
-                    "No, Neo," said I. "We never free anyone above a certain age - the mind has trouble letting go. If you were to go back into the cave and try to enlighten anyone else to the truth, they would undoubtedly resist or worse."
+                    "No, Neo," said I, "we never free anyone above a certain age - the mind has trouble letting go. If you were to go back into the cave and try to enlighten anyone else to the truth, they would undoubtedly resist or worse."
                 </div>
                 <div class="text-center">...</div>
                 <div>
