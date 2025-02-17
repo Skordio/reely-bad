@@ -14,6 +14,17 @@
 						</v-row>
 					</v-container>
 				</v-app-bar>
+				<v-dialog width="auto" v-model="dialogIsActive">
+					<v-card title="Notice" max-width="400" :text="dialogText">
+						<template v-slot:actions>
+							<v-btn
+								class="ms-auto"
+								text="Ok"
+								@click="dialogIsActive = false"
+							></v-btn>
+						</template>
+					</v-card>
+				</v-dialog>
 				<v-main class="d-flex justify-center align-center">
 					<v-scroll-x-transition>
 						<router-view>
@@ -53,4 +64,10 @@ const toggleTheme = () => {
   currentTheme.value = currentTheme.value === 'dark' ? 'light' : 'dark'
 
 }
+
+const dialogIsActive = ref(true);
+const dialogText = "This website is Group 2's final project for CSCI 539 at Rochester Institute of Technology. \
+					It is a Meta Puzzle - a large puzzle that contains multiple subsidiary puzzles. \
+					In order to find the overall solution, you will need to solve each smaller puzzle (which you can reach by clicking on the movie reels on the main page). \
+					See if you can figure out the answers to the individual puzzles and then use them to figure out the final answer!"
 </script>
