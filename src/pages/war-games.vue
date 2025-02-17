@@ -1,5 +1,16 @@
 <template>
     <v-container id="war-games-container" :class="mdAndDown ? 'px-12' : null" :="{...puzzleContainer}">
+        <v-row class="w-100">
+            <v-col cols="auto">
+                <v-card class="mb-5" variant="outlined" title="Notice:" text="This puzzle cannot be solved without visiting locations on the RIT campus.">
+                    <v-row class="pa-3 mt-n5">
+                        <v-col class="" cols="auto">
+                            <v-btn @click="answerInput = 'hypnotize'" variant="tonal">Fill Answer</v-btn>
+                        </v-col>
+                    </v-row>
+                </v-card>
+            </v-col>
+        </v-row>
         <v-row>
             <v-col class="text-h3 pb-2">
                 WarGames (Reel 4)
@@ -36,7 +47,7 @@
         </v-row>
         <v-row class="align-self-stretch">
             <v-col cols="12" class="d-flex flex-row flex-1-1">
-                <answer-bar :="{answer}"></answer-bar>
+                <answer-bar :="{answer}" :input="answerInput"></answer-bar>
             </v-col>
         </v-row>
     </v-container>
@@ -58,5 +69,7 @@ const contentCols = computed(() => {
 })
 
 const answer = ref(1006425056)
+
+const answerInput = ref('')
 
 </script>

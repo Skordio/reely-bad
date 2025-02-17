@@ -17,11 +17,12 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref } from 'vue';
+import { computed, ref, watch } from 'vue';
 import { stringHash } from '@/scripts';
 
 const props = defineProps({
-    answer: Number
+    answer: Number,
+    input: String
 })
 
 function normalize(inputString: string) { 
@@ -31,6 +32,10 @@ function normalize(inputString: string) {
 
 const answerInput = ref('')
 const bgColor = ref('')
+
+watch(() => props.input, () => {
+    answerInput.value = props.input ? props.input : ''
+})
 
 const checkAnswer = () => {
     if (stringHash(normalize(answerInput.value)) === props.answer!) {
